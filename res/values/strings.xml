@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DemoForHaici</string>
+    <string name="base_def">释义</string>
+    <string name="sentence">例句</string>
+    <string name="vocabulary">讲解</string>
+	<string name="action_settings">hehe</string>
+
+</resources>

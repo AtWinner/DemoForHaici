@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.menucontent.MainActivity$PlaceholderFragment" 
+    android:id="@+id/fragment_page0_Linear"
+    android:orientation="vertical"
+    android:background="@color/myWhite">
+
+    <ListView 
+    	android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_page0_List"
+        android:divider = "@color/myWhite"
+        ></ListView>
+</LinearLayout>
