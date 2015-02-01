@@ -71,7 +71,12 @@ public class FragmentPage2_ListViewAdapter extends BaseAdapter
 			switch (word.vocabularyList.get(position).layer) {
 			case 1:
 				holder.vocabulary_item_number.setTextColor(myColor.myGreen);
+				holder.vocabulary_item_number.setText(word.vocabularyList.get(position).text);
+				holder.vocabulary_item_text.setVisibility(View.GONE);
+				holder.vocabulary_item_trans.setVisibility(View.GONE);
+				break;
 			case 0:
+				holder.vocabulary_item_number.setTextColor(myColor.myBlack);
 				holder.vocabulary_item_number.setText(word.vocabularyList.get(position).text);
 				holder.vocabulary_item_text.setVisibility(View.GONE);
 				holder.vocabulary_item_trans.setVisibility(View.GONE);
