@@ -1,9 +1,11 @@
 package com.example.adapter;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +40,7 @@ public class FragmentPage0 extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
+    	Log.e("OnCreateView", this.toString());
         View rootView = inflater.inflate(R.layout.fragment_page0, container, false);
         Context context = getActivity();
         ListView fragment_page0_List = (ListView)rootView.findViewById(R.id.fragment_page0_List);
@@ -47,4 +50,56 @@ public class FragmentPage0 extends Fragment
         
         return rootView;
     }
+    
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		Log.e("OnActivityCreated", this.toString());
+		super.onActivityCreated(savedInstanceState);
+	}
+	@Override
+	public void onAttach(Activity activity) {
+		Log.e("OnAttach", this.toString());
+		super.onAttach(activity);
+	}
+	@Override
+	public void onDestroyView() {
+		Log.e("OnDestroyView", this.toString());
+		super.onDestroyView();
+	}
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		Log.e("OnCreate", this.toString());
+		super.onCreate(savedInstanceState);
+	}
+	@Override
+	public void onDestroy() {
+		Log.e("OnDestroy", this.toString());
+		super.onDestroy();
+	}
+	@Override
+	public void onDetach() {
+		Log.e("OnDetach", this.toString());
+		super.onDetach();
+	}
+	@Override
+	public void onPause() {
+		Log.e("OnPause", this.toString()); 
+		super.onPause();
+	}
+	@Override
+	public void onResume() {
+		Log.e("OnResume", this.toString());
+		super.onResume();
+	}
+	@Override
+	public void onStart() {
+		Log.e("OnStart", this.toString());
+		super.onStart();
+	}
+	@Override
+	public void onStop() {
+		Log.e("OnStop", this.toString());
+		super.onStop();
+	}
+    
 }
